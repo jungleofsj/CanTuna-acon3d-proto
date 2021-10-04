@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p>유저 등록</p>
+<div class="container">
+    <form action="/users/new" method="post">
+
+        <div class="form-group">
+            <label for="name">유저 이름</label>
+            <input type="text" id="name" name="name" placeholder="유저명을 입력하세요">
+        </div>
+
+        <div class="form-group">
+            <label for="type">유저 타입</label>
+            <input type="Long" id="type" name="type" placeholder="0:작가, 1:에디터 2:고객">
+        </div>
+
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>

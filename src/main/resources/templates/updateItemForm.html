@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p>상품 수정</p>
+<div class="container">
+    <form action="/items/update" method="post">
+        <div class="form-group">
+            <label for="itemId">상품ID</label>
+            <input type="Long" id="itemId" name="itemId" placeholder="상품ID">
+        </div>
+
+        <div class="form-group">
+            <label for="itemNameEng">영문이름</label>
+            <input type="text" id="itemNameEng" name="itemNameEng" placeholder="영문 이름">
+        </div>
+
+        <div class="form-group">
+            <label for="itemNameChn">중문이름</label>
+            <input type="text" id="itemNameChn" name="itemNameChn" placeholder="중문 이름">
+        </div>
+
+        <div class="form-group">
+            <label for="itemCommission">수수료</label>
+            <input type="double" id="itemCommission" name="itemCommission" placeholder="수수료를 입력하세요">
+        </div>
+
+        <div class="form-group">
+            <label for="itemTextEng">영문설명</label>
+            <input type="text" id="itemTextEng" name="itemTextEng" placeholder="영문 설명을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="itemTextChn">영문설명</label>
+            <input type="text" id="itemTextChn" name="itemTextChn" placeholder="중문 설명을 입력하세요">
+        </div>
+
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<p>상품 등록</p>
+<div class="container">
+    <form action="/items/new" method="post">
+
+        <div class="form-group">
+            <label for="itemNameKor">상품 이름</label>
+            <input type="text" id="itemNameKor" name="itemNameKor" placeholder="이름을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="itemCreator">작가</label>
+            <input type="text" id="itemCreator" name="itemCreator" placeholder="작가를 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="itemPrice">가격</label>
+            <input type="double" id="itemPrice" name="itemPrice" placeholder="가격을 입력하세요">
+        </div>
+        <div class="form-group">
+            <label for="itemTextKor">상품 설명</label>
+            <input type="text" id="itemTextKor" name="itemTextKor" placeholder="설명을 입력하세요">
+        </div>
+        <button type="submit">등록</button>
+    </form>
+</div> <!-- /container -->
+</body>
+</html>
